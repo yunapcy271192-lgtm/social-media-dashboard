@@ -52,7 +52,7 @@ function topCards({ darkMode }) {
       {cardsData.map((card) => (
         <div
           key={card.id}
-            className="bg-[#252a41] text-white rounded-md p-6 cursor-pointer transition-all"
+          className={`bg-[#252a41] text-white rounded-md p-6 cursor-pointer transition-all ${card.border}`}
         >
           <div className="flex items-center justify-center gap-2 mb-4">
             <img src={card.icon} alt={card.platform} className="w-5 h-5" />
